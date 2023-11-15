@@ -1,0 +1,595 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html
+  lang="en"
+  data-layout="vertical"
+  data-topbar="dark"
+  data-sidebar="light"
+  data-sidebar-size="lg"
+>
+  <head>
+    <meta charset="utf-8" />
+    <title>Musta Harka | Purchases</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      content="Premium Multipurpose Admin & Dashboard Template"
+      name="description"
+    />
+    <meta content="Themesbrand" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+
+    <!-- jsvectormap css -->
+    <link
+      href="assets/libs/jsvectormap/css/jsvectormap.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!--Swiper slider css-->
+    <link
+      href="assets/libs/swiper/swiper-bundle.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Layout config Js -->
+    <script src="assets/js/layout.js"></script>
+    <!-- Bootstrap Css -->
+    <link
+      href="assets/css/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+    <!-- custom Css-->
+    <link href="assets/css/custom.min.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+    />
+  </head>
+
+  <body>
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+      <header id="page-topbar">
+        <div class="layout-width">
+          <div class="navbar-header">
+            <div class="d-flex">
+              <!-- LOGO -->
+              <div class="navbar-brand-box horizontal-logo">
+                <a href="index.html" class="logo logo-dark">
+                  <span class="logo-sm">
+                    <img src="assets/images/logo-sm.png" alt="" height="22" />
+                  </span>
+                  <span class="logo-lg">
+                    <img src="assets/images/logo-dark.png" alt="" height="17" />
+                  </span>
+                </a>
+
+                <a href="index.html" class="logo logo-light">
+                  <span class="logo-sm">
+                    <img src="assets/images/logo-sm.png" alt="" height="22" />
+                  </span>
+                  <span class="logo-lg">
+                    <img
+                      src="assets/images/logo-light.png"
+                      alt=""
+                      height="17"
+                    />
+                  </span>
+                </a>
+              </div>
+
+              <button
+                type="button"
+                class="btn btn-sm px-3 fs-16 header-item vertical-menu-btn topnav-hamburger"
+                id="topnav-hamburger-icon"
+              >
+                <span class="hamburger-icon">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+              </button>
+            </div>
+
+            <div class="d-flex align-items-center">
+              <div class="dropdown ms-sm-3 header-item topbar-user">
+                <button
+                  type="button"
+                  class="btn"
+                  id="page-header-user-dropdown"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <span class="d-flex align-items-center">
+                    <img
+                      class="rounded-circle header-profile-user"
+                      src="assets/images/users/avatar-1.jpg"
+                      alt="Header Avatar"
+                    />
+                    <span class="text-start ms-xl-2">
+                      <span
+                        class="d-none d-xl-inline-block ms-1 fw-medium user-name-text"
+                        >Anna Adame</span
+                      >
+                      <span
+                        class="d-none d-xl-block ms-1 fs-12 text-muted user-name-sub-text"
+                        >Founder</span
+                      >
+                    </span>
+                  </span>
+                </button>
+                <div class="dropdown-menu dropdown-menu-end">
+                  <!-- item-->
+                  <h6 class="dropdown-header">Welcome Anna!</h6>
+                  <a class="dropdown-item" href="pages-profile.html"
+                    ><i
+                      class="mdi mdi-account-circle text-muted fs-16 align-middle me-1"
+                    ></i>
+                    <span class="align-middle">My Account</span></a
+                  >
+                  <a class="dropdown-item" href="auth-lockscreen-basic.html"
+                    ><i
+                      class="mdi mdi-lock text-muted fs-16 align-middle me-1"
+                    ></i>
+                    <span class="align-middle">Lock screen</span></a
+                  >
+                  <a class="dropdown-item" href="auth-logout-basic.html"
+                    ><i
+                      class="mdi mdi-logout text-muted fs-16 align-middle me-1"
+                    ></i>
+                    <span class="align-middle" data-key="t-logout"
+                      >Logout</span
+                    ></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- ========== App Menu 1 ========== -->
+      <div class="app-menu navbar-menu">
+        <div class="navbar-brand-box">
+          <a href="index.html" class="logo logo-dark">
+            <span class="logo-sm">
+              <img src="assets/images/logo-sm.png" alt="" height="22" />
+            </span>
+            <span class="logo-lg">
+              <img src="assets/images/logo-dark.png" alt="" height="17" />
+            </span>
+          </a>
+          <button
+            type="button"
+            class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover"
+            id="vertical-hover"
+          >
+            <i class="ri-record-circle-line"></i>
+          </button>
+        </div>
+
+        <div id="scrollbar">
+          <div class="container-fluid">
+            <div id="two-column-menu"></div>
+            <ul class="navbar-nav" id="navbar-nav">
+              <li class="menu-title"><span data-key="t-menu">Menu</span></li>
+              <li class="nav-item">
+                <a class="nav-link menu-link" href="index.html">
+                  <i class="las la-chart-pie"></i>
+                  <span data-key="t-dashboards">Dashboards</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu-link" href="institution.html">
+                  <i class="las la-city"></i>
+                  <span data-key="t-dashboards">Institutions</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu-link" href="ticket.html">
+                  <i class="las la-ticket-alt"></i>
+                  <span data-key="t-dashboards">Tickets</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu-link" href="purchases.html">
+                  <i class="las la-money-check-alt"></i>
+                  <span data-key="t-dashboards">Purchases</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu-link" href="song-request.html">
+                  <i class="las la-microphone-alt"></i>
+                  <span data-key="t-dashboards">Song Requests</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu-link" href="customer.html">
+                  <i class="las la-user-secret"></i>
+                  <span data-key="t-dashboards">Customers</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu-link" href="user.html">
+                  <i class="las la-user-tie"></i>
+                  <span data-key="t-dashboards">User</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="vertical-overlay"></div>
+
+      <!-- ============================================================== -->
+      <!-- Start right Content here -->
+      <!-- ============================================================== -->
+      <div class="main-content">
+        <div class="page-content">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h4 class="card-title mb-0">All Purchases</h4>
+                  </div>
+                  <!-- end card header -->
+
+                  <div class="card-body">
+                    <div id="customerList">
+                      <div class="row g-4 mb-3">
+                        <div class="col-sm-auto">
+                          <div class="">
+                            <div class="search-box ms-2">
+                              <input
+                                type="text"
+                                class="form-control search"
+                                placeholder="Search..."
+                              />
+                              <i class="ri-search-line search-icon"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm">
+                          <div class="d-flex justify-content-sm-end">
+                            <button
+                              type="button"
+                              class="btn btn-success add-btn"
+                            >
+                              <i class="ri-add-line align-bottom me-1"></i> Add
+                              Purchase
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="table-responsive table-card mt-3 mb-1">
+                        <table
+                          class="table align-middle table-nowrap"
+                          id="customerTable"
+                        >
+                          <thead class="table-light">
+                            <tr>
+                              <th class="sort">#</th>
+                              <th class="sort">Customer</th>
+                              <th class="sort">Purchased Date</th>
+                              <th class="sort">Purchase amount</th>
+                              <th class="sort">Total Price</th>
+                              <th class="sort">Status</th>
+                              <th class="sort" style="float: inline-end">
+                                Action
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody class="list form-check-all">
+                            <tr>
+                              <td>1</td>
+                              <td class="searchfield1">Arif Bipu</td>
+                              <td class="searchfield2">01-01-2024</td>
+                              <td class="searchfield3">1000</td>
+                              <td class="searchfield4">2000</td>
+                              <td class="searchfield5">
+                                <span
+                                  class="badge badge-soft-success text-uppercase"
+                                  >Active</span
+                                >
+                              </td>
+                              <td>
+                                <div class="d-flex justify-content-end">
+                                  <div class="edit">
+                                    <button
+                                      class="btn btn-sm btn-success edit-item-btn d-flex align-items-center gap-1"
+                                      data-bs-toggle="modal"
+                                    >
+                                      <i class="las la-pencil-alt"></i
+                                      ><span>Edit</span>
+                                    </button>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td class="searchfield1">Arif Bipu</td>
+                              <td class="searchfield2">01-01-2024</td>
+                              <td class="searchfield3">1000</td>
+                              <td class="searchfield4">2000</td>
+                              <td class="searchfield5">
+                                <span
+                                  class="badge badge-soft-danger text-uppercase"
+                                  >Disabled</span
+                                >
+                              </td>
+                              <td>
+                                <div class="d-flex justify-content-end">
+                                  <div class="edit">
+                                    <button
+                                      class="btn btn-sm btn-success edit-item-btn d-flex align-items-center gap-1"
+                                      data-bs-toggle="modal"
+                                    >
+                                      <i class="las la-pencil-alt"></i
+                                      ><span>Edit</span>
+                                    </button>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <div class="noresult" style="display: none">
+                          <div class="text-center">
+                            <lord-icon
+                              src="https://cdn.lordicon.com/msoeawqm.json"
+                              trigger="loop"
+                              colors="primary:#121331,secondary:#08a88a"
+                              style="width: 75px; height: 75px"
+                            >
+                            </lord-icon>
+                            <h5 class="mt-2">Sorry! No Result Found</h5>
+                            <p class="text-muted mb-0">
+                              We've searched more than 150+ Orders We did not
+                              find any orders for you search.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="d-flex justify-content-end">
+                        <div class="pagination-wrap hstack gap-2">
+                          <a
+                            class="page-item pagination-prev disabled"
+                            href="#"
+                          >
+                            Previous
+                          </a>
+                          <ul class="pagination listjs-pagination mb-0"></ul>
+                          <a class="page-item pagination-next" href="#">
+                            Next
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end card -->
+                </div>
+                <!-- end col -->
+              </div>
+              <!-- end col -->
+            </div>
+          </div>
+          <!-- container-fluid -->
+        </div>
+        <!-- End Page-content -->
+        <footer class="footer">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-6">
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                © Velzon.
+              </div>
+              <div class="col-sm-6">
+                <div class="text-sm-end d-none d-sm-block">
+                  Design & Develop by Themesbrand
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <!-- end main content-->
+    </div>
+    <!-- END layout-wrapper -->
+
+    <div
+      class="modal fade"
+      id="purchaseModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalgridLabel"
+      aria-modal="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalgridLabel">
+              Edit Institution
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="javascript:void(0);">
+              <div class="row g-3">
+                <div class="col-xxl-6">
+                  <div>
+                    <label for="name" class="form-label">Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="name"
+                      placeholder="Enter Name"
+                    />
+                  </div>
+                </div>
+                <!--end col-->
+                <div class="col-xxl-6">
+                  <div>
+                    <label for="email" class="form-label">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      placeholder="Enter Email"
+                    />
+                  </div>
+                </div>
+                <div class="col-xxl-6">
+                  <div>
+                    <label for="phone" class="form-label">Phone</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      name="phone"
+                      placeholder="Enter your phone"
+                    />
+                  </div>
+                </div>
+                <div class="col-xxl-6">
+                  <div>
+                    <label for="address" class="form-label">Address</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="Address"
+                      placeholder="Enter your address"
+                    />
+                  </div>
+                </div>
+                <div class="col-xxl-6">
+                  <div>
+                    <label for="map-location" class="form-label"
+                      >Map Location</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="map-location"
+                      placeholder="Enter your map location"
+                    />
+                  </div>
+                </div>
+                <!--end col-->
+                <div class="col-xxl-6">
+                  <div>
+                    <label for="" class="form-label d-flex align-items-center"
+                      >Status
+                      <i
+                        class="las la-question-circle tooltip-icon mx-1"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="top"
+                        title="Status"
+                        rel="tooltip"
+                      ></i
+                    ></label>
+                    <select id="" placeholder="Choose Status">
+                      <option value="">Select a status...</option>
+                      <option>Active</option>
+                      <option>Disable</option>
+                    </select>
+                  </div>
+                </div>
+                <!--end col-->
+                <div class="col-lg-12">
+                  <div class="hstack gap-2 justify-content-end">
+                    <button
+                      type="button"
+                      class="btn btn-light"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="submit" class="btn btn-primary">
+                      Submit
+                    </button>
+                  </div>
+                </div>
+                <!--end col-->
+              </div>
+              <!--end row-->
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--start back-to-top-->
+    <button
+      onclick="topFunction()"
+      class="btn btn-danger btn-icon"
+      id="back-to-top"
+    >
+      <i class="ri-arrow-up-line"></i>
+    </button>
+    <!--end back-to-top-->
+
+    <!-- JAVASCRIPT -->
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/node-waves/waves.min.js"></script>
+    <script src="assets/libs/feather-icons/feather.min.js"></script>
+    <script src="assets/js/pages/plugins/lord-icon-2.1.0.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <!-- prismjs plugin -->
+    <script src="assets/libs/prismjs/prism.js"></script>
+    <script src="assets/libs/list.js/list.min.js"></script>
+    <script src="assets/libs/list.pagination.js/list.pagination.min.js"></script>
+
+    <!------------------Jquery------------------->
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js"
+      integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css"
+      integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg="
+      crossorigin="anonymous"
+    />
+    <!-- listjs init -->
+    <script src="assets/js/pages/listjs.init.js"></script>
+
+    <!-- App js -->
+    <script src="assets/js/app.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("select").selectize({
+          sortField: "text",
+        });
+      });
+
+      $(function () {
+        $("[rel='tooltip']").tooltip();
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,884 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html
+  lang="en"
+  data-layout="vertical"
+  data-topbar="dark"
+  data-sidebar="light"
+  data-sidebar-size="lg"
+>
+  <head>
+    <meta charset="utf-8" />
+    <title>Musta Harka</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      content="Premium Multipurpose Admin & Dashboard Template"
+      name="description"
+    />
+    <meta content="Themesbrand" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+
+    <!-- jsvectormap css -->
+    <link
+      href="assets/libs/jsvectormap/css/jsvectormap.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!--Swiper slider css-->
+    <link
+      href="assets/libs/swiper/swiper-bundle.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Layout config Js -->
+    <script src="assets/js/layout.js"></script>
+    <!-- Bootstrap Css -->
+    <link
+      href="assets/css/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+    <!-- custom Css-->
+    <link href="assets/css/custom.min.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+    />
+  </head>
+
+  <body>
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+      <header id="page-topbar">
+        <div class="layout-width">
+          <div class="navbar-header">
+            <div class="d-flex">
+              <!-- LOGO -->
+              <div class="navbar-brand-box horizontal-logo">
+                <a href="index.html" class="logo logo-dark">
+                  <span class="logo-sm">
+                    <img src="assets/images/logo-sm.png" alt="" height="22" />
+                  </span>
+                  <span class="logo-lg">
+                    <img src="assets/images/logo-dark.png" alt="" height="17" />
+                  </span>
+                </a>
+
+                <a href="index.html" class="logo logo-light">
+                  <span class="logo-sm">
+                    <img src="assets/images/logo-sm.png" alt="" height="22" />
+                  </span>
+                  <span class="logo-lg">
+                    <img
+                      src="assets/images/logo-light.png"
+                      alt=""
+                      height="17"
+                    />
+                  </span>
+                </a>
+              </div>
+
+              <button
+                type="button"
+                class="btn btn-sm px-3 fs-16 header-item vertical-menu-btn topnav-hamburger"
+                id="topnav-hamburger-icon"
+              >
+                <span class="hamburger-icon">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+              </button>
+            </div>
+
+            <div class="d-flex align-items-center">
+              <div class="dropdown ms-sm-3 header-item topbar-user">
+                <button
+                  type="button"
+                  class="btn"
+                  id="page-header-user-dropdown"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <span class="d-flex align-items-center">
+                    <img
+                      class="rounded-circle header-profile-user"
+                      src="assets/images/users/avatar-1.jpg"
+                      alt="Header Avatar"
+                    />
+                    <span class="text-start ms-xl-2">
+                      <span
+                        class="d-none d-xl-inline-block ms-1 fw-medium user-name-text"
+                        >Anna Adame</span
+                      >
+                      <span
+                        class="d-none d-xl-block ms-1 fs-12 text-muted user-name-sub-text"
+                        >Founder</span
+                      >
+                    </span>
+                  </span>
+                </button>
+                <div class="dropdown-menu dropdown-menu-end">
+                  <!-- item-->
+                  <h6 class="dropdown-header">Welcome Anna!</h6>
+                  <a class="dropdown-item" href="pages-profile.html"
+                    ><i
+                      class="mdi mdi-account-circle text-muted fs-16 align-middle me-1"
+                    ></i>
+                    <span class="align-middle">My Account</span></a
+                  >
+                  <a class="dropdown-item" href="auth-lockscreen-basic.html"
+                    ><i
+                      class="mdi mdi-lock text-muted fs-16 align-middle me-1"
+                    ></i>
+                    <span class="align-middle">Lock screen</span></a
+                  >
+                  <a class="dropdown-item" href="auth-logout-basic.html"
+                    ><i
+                      class="mdi mdi-logout text-muted fs-16 align-middle me-1"
+                    ></i>
+                    <span class="align-middle" data-key="t-logout"
+                      >Logout</span
+                    ></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- ========== App Menu 1 ========== -->
+      <div class="app-menu navbar-menu">
+        <div class="navbar-brand-box">
+          <a href="index.html" class="logo logo-dark">
+            <span class="logo-sm">
+              <img src="assets/images/logo-sm.png" alt="" height="22" />
+            </span>
+            <span class="logo-lg">
+              <img src="assets/images/logo-dark.png" alt="" height="17" />
+            </span>
+          </a>
+          <button
+            type="button"
+            class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover"
+            id="vertical-hover"
+          >
+            <i class="ri-record-circle-line"></i>
+          </button>
+        </div>
+
+        <div id="scrollbar">
+          <div class="container-fluid">
+            <div id="two-column-menu"></div>
+            <ul class="navbar-nav" id="navbar-nav">
+              <li class="menu-title"><span data-key="t-menu">Menu</span></li>
+              <li class="nav-item">
+                <a class="nav-link menu-link" href="index.html">
+                  <i class="las la-chart-pie"></i>
+                  <span data-key="t-dashboards">Dashboards</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu-link" href="institution.html">
+                  <i class="las la-city"></i>
+                  <span data-key="t-dashboards">Institutions</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu-link" href="ticket.html">
+                  <i class="las la-ticket-alt"></i>
+                  <span data-key="t-dashboards">Tickets</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu-link" href="purchases.html">
+                  <i class="las la-money-check-alt"></i>
+                  <span data-key="t-dashboards">Purchases</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu-link" href="song-request.html">
+                  <i class="las la-microphone-alt"></i>
+                  <span data-key="t-dashboards">Song Requests</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu-link" href="customer.html">
+                  <i class="las la-user-secret"></i>
+                  <span data-key="t-dashboards">Customers</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu-link" href="user.html">
+                  <i class="las la-user-tie"></i>
+                  <span data-key="t-dashboards">User</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="vertical-overlay"></div>
+
+      <!-- ============================================================== -->
+      <!-- Start right Content here -->
+      <!-- ============================================================== -->
+      <div class="main-content">
+        <div class="page-content">
+          <div class="container-fluid">
+            <div class="row mb-5">
+              <div class="col-lg-12 col-xl-6 mb-3">
+                <div
+                  class="card h-100 w-100 px-5 py-4 dashboardProfile d-flex justify-content-center"
+                >
+                  <div class="d-flex gap-5 align-items-center w-100">
+                    <div class="dashboardProfileImg">
+                      <img
+                        src="https://imgv3.fotor.com/images/homepage-feature-card/make-blurry-girl-image-clear-with-Fotor-ai-image-enhancer.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="dashboardProfileContent w-50">
+                      <div class="mb-4">
+                        <h4 class="fw-semibold">Arif Bipu</h4>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <div class="">
+                          <p class="fs-15">
+                            <span class="text-gray me-3">Role :</span>
+                            <span class="text-black fw-medium">User</span>
+                          </p>
+                        </div>
+                        <div class="">
+                          <p class="fs-15">
+                            <span class="text-gray me-3">Position :</span>
+                            <span class="text-black fw-medium"> Team Lead</span>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="">
+                        <p class="fs-15">
+                          <span class="text-gray me-3">Email :</span>
+                          <span class="text-black fw-medium">
+                            arifbipu@gmail.com</span
+                          >
+                        </p>
+                      </div>
+                      <div class="">
+                        <p class="fs-15">
+                          <span class="text-gray me-3">Phone :</span>
+                          <span class="text-black fw-medium"
+                            >+8801887980841
+                          </span>
+                        </p>
+                      </div>
+                      <div class="mb-4">
+                        <p class="fs-15">
+                          <span class="text-gray me-3">Company :</span>
+                          <span class="text-black fw-medium">Evocation It</span>
+                        </p>
+                      </div>
+                      <div class="d-flex gap-3">
+                        <div class="dashboardProfileIcon1">
+                          <i class="lab la-facebook-square cursor fs-36"></i>
+                        </div>
+                        <div class="dashboardProfileIcon2">
+                          <i class="lab la-linkedin cursor fs-36"></i>
+                        </div>
+                        <div class="dashboardProfileIcon3">
+                          <i class="lab la-twitter-square cursor fs-36"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12 col-xl-3 mb-3">
+                <div class="card h-100 dashboardCalender p-3">
+                  <div
+                    id="app"
+                    class="CalenderPage-content d-flex align-items-center justify-content-center"
+                  >
+                    <div class="calendar-wrap">
+                      <section class="calendar-header mb-3">
+                        <a
+                          @click="previousMonth()"
+                          class="link icon-only calendar-prev-month-button"
+                          ><i class="las la-angle-left cursor"></i
+                        ></a>
+                        <a class="current-month-value link px-3"
+                          >{{ monthName }}</a
+                        >
+                        <a
+                          @click="nextMonth()"
+                          class="link icon-only calendar-next-month-button"
+                          ><i class="las la-angle-right cursor"></i
+                        ></a>
+                      </section>
+
+                      <section
+                        id="calendar-wrapper"
+                        class="calendar-wrapper skeletons"
+                      >
+                        <main id="calendar">
+                          <div class="weekday">S</div>
+                          <div class="weekday">M</div>
+                          <div class="weekday">T</div>
+                          <div class="weekday">W</div>
+                          <div class="weekday">T</div>
+                          <div class="weekday">F</div>
+                          <div class="weekday">S</div>
+
+                          <div
+                            v-for="(day, index) in days"
+                            :data-date="day.format('DD.MM.YYYY')"
+                            :style="{ gridColumn: column(index) }"
+                            :class="{ day, today: isToday(day) }"
+                          >
+                            <span>{{ day.format('D') }}</span>
+                          </div>
+                        </main>
+                      </section>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12 col-xl-3 mb-3">
+                <div
+                  class="card h-100 dashboardAccordion d-flex justify-content-center align-items-center p-3"
+                >
+                  <!-- Accordions with Icons -->
+                  <div
+                    class="accordion custom-accordionwithicon"
+                    id="accordionWithicon"
+                  >
+                    <div class="accordion-item">
+                      <h2
+                        class="accordion-header"
+                        id="accordionwithiconExample1"
+                      >
+                        <button
+                          class="accordion-button"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#accor_iconExamplecollapse1"
+                          aria-expanded="true"
+                          aria-controls="accor_iconExamplecollapse1"
+                        >
+                          <i
+                            class="las la-window-close text-danger fs-24 me-2"
+                          ></i>
+                          Add Profile Picture
+                        </button>
+                      </h2>
+                      <div
+                        id="accor_iconExamplecollapse1"
+                        class="accordion-collapse collapse show"
+                        aria-labelledby="accordionwithiconExample1"
+                        data-bs-parent="#accordionWithicon"
+                      >
+                        <div class="accordion-body">
+                          Increase or decrease the letter spacing depending on
+                          the situation and try, try again until it looks right,
+                          and each assumenda labore aes Homo nostrud organic,
+                          assumenda labore aesthetic magna elements, buttons,
+                          everything.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2
+                        class="accordion-header"
+                        id="accordionwithiconExample2"
+                      >
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#accor_iconExamplecollapse2"
+                          aria-expanded="false"
+                          aria-controls="accor_iconExamplecollapse2"
+                        >
+                          <i class="las la-check fs-20 text-success me-2"></i>
+                          Add Profile Picture
+                        </button>
+                      </h2>
+                      <div
+                        id="accor_iconExamplecollapse2"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="accordionwithiconExample2"
+                        data-bs-parent="#accordionWithicon"
+                      >
+                        <div class="accordion-body">
+                          Nullam quis ante. Etiam sit amet orci eget eros
+                          faucibus tincidunt. Duis leo. Sed fringilla mauris sit
+                          amet nibh. Donec sodales sagittis magna. Sed
+                          consequat, leo eget bibendum sodales, augue velit
+                          cursus nunc, quis gravida magna mi a libero. Fusce
+                          vulputate eleifend sapien.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="accordion" id="default-accordion-example1">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        Notification
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseOne"
+                      class="accordion-collapse collapse show"
+                      aria-labelledby="headingOne"
+                      data-bs-parent="#default-accordion-example"
+                    >
+                      <div class="card mb-0">
+                        <div class="card-body">
+                          <div class="d-flex align-middle">
+                            <div class="flex-shrink-0">
+                              <img
+                                src="assets/images/small/img-1.jpg"
+                                class="rounded img-fluid"
+                                style="height: 60px"
+                                alt=""
+                              />
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                              <h6 class="mb-1 lh-base">
+                                <a href="#" class="text-reset"
+                                  >One stop shop destination on all the latest
+                                  news in crypto currencies</a
+                                >
+                              </h6>
+                              <p class="text-muted fs-12 mb-0">
+                                Dec 12, 2021
+                                <i
+                                  class="mdi mdi-circle-medium align-middle mx-1"
+                                ></i
+                                >09:22 AM
+                              </p>
+                            </div>
+                          </div>
+                          <!-- end -->
+                          <div class="d-flex mt-4">
+                            <div class="flex-shrink-0">
+                              <img
+                                src="assets/images/small/img-2.jpg"
+                                class="rounded img-fluid"
+                                style="height: 60px"
+                                alt=""
+                              />
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                              <h6 class="mb-1 lh-base">
+                                <a href="#" class="text-reset"
+                                  >Coin Journal is dedicated to delivering
+                                  stories on the latest crypto</a
+                                >
+                              </h6>
+                              <p class="text-muted fs-12 mb-0">
+                                Dec 03, 2021
+                                <i
+                                  class="mdi mdi-circle-medium align-middle mx-1"
+                                ></i
+                                >12:09 PM
+                              </p>
+                            </div>
+                          </div>
+                          <!-- end -->
+                          <div class="d-flex mt-4">
+                            <div class="flex-shrink-0">
+                              <img
+                                src="assets/images/small/img-3.jpg"
+                                class="rounded img-fluid"
+                                style="height: 60px"
+                                alt=""
+                              />
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                              <h6 class="mb-1 lh-base">
+                                <a href="#" class="text-reset"
+                                  >The bitcoin-holding U.S. senator is trying to
+                                  “fully integrate” crypto
+                                </a>
+                              </h6>
+                              <p class="text-muted fs-12 mb-0">
+                                Nov 22, 2021
+                                <i
+                                  class="mdi mdi-circle-medium align-middle mx-1"
+                                ></i
+                                >11:47 AM
+                              </p>
+                            </div>
+                          </div>
+                          <!-- end -->
+                          <div class="d-flex mt-4">
+                            <div class="flex-shrink-0">
+                              <img
+                                src="assets/images/small/img-6.jpg"
+                                class="rounded img-fluid"
+                                style="height: 60px"
+                                alt=""
+                              />
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                              <h6 class="mb-1 lh-base">
+                                <a href="#" class="text-reset"
+                                  >Cryptocurrency price like Bitcoin, Dash,
+                                  Dogecoin, Ripple and Litecoin</a
+                                >
+                              </h6>
+                              <p class="text-muted fs-12 mb-0">
+                                Nov 18, 2021
+                                <i
+                                  class="mdi mdi-circle-medium align-middle mx-1"
+                                ></i
+                                >06:13 PM
+                              </p>
+                            </div>
+                          </div>
+                          <!-- end -->
+                        </div>
+                        <!-- end card body -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="accordion" id="default-accordion-example2">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo"
+                        aria-expanded="true"
+                        aria-controls="collapseTwo"
+                      >
+                        Leave Request
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseTwo"
+                      class="accordion-collapse collapse show"
+                      aria-labelledby="headingOne"
+                      data-bs-parent="#default-accordion-example"
+                    >
+                      <div class="card mb-0 p-3">
+                        <div class="col-sm-auto">
+                          <div class="row">
+                            <div class="col-lg-3">
+                              <div class="search-box ms-2">
+                                <input
+                                  type="text"
+                                  class="form-control search"
+                                  placeholder="Search..."
+                                />
+                                <i class="ri-search-line search-icon"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="table-responsive table-card mt-3 mb-1 px-3">
+                          <table
+                            class="table align-middle table-nowrap"
+                            id="customerTable"
+                          >
+                            <thead class="table-light">
+                              <tr>
+                                <th class="sort" data-sort="Employee">
+                                  Employee
+                                </th>
+                                <th class="sort" data-sort="leave">
+                                  Leave type
+                                </th>
+                                <th class="sort" data-sort="Duration">
+                                  Duration
+                                </th>
+                                <th class="sort" data-sort="Days">Days</th>
+                                <th class="sort" data-sort="Applied on">
+                                  Applied on
+                                </th>
+                                <th class="sort" data-sort="Status">Status</th>
+
+                                <th class="sort float-end" data-sort="action">
+                                  Action
+                                </th>
+                              </tr>
+                            </thead>
+                            <tbody class="list form-check-all">
+                              <tr>
+                                <td class="searchfield1">Arif Bipu</td>
+                                <td class="searchfield2">Sick Levae</td>
+                                <td class="searchfield4">
+                                  01/01/2023 - 03-01-2023
+                                </td>
+                                <td class="searchfield3">2 Days</td>
+                                <td class="searchfield4">01/01/2023</td>
+                                <td class="searchfield5">
+                                  <span
+                                    class="badge badge-soft-danger text-uppercase"
+                                    >Reject</span
+                                  >
+                                </td>
+                                <td>
+                                  <div class="d-flex gap-2 float-end">
+                                    <div class="edit">
+                                      <button
+                                        class="btn btn-sm btn-success edit-item-btn"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#approveModal"
+                                      >
+                                        Approve
+                                      </button>
+                                    </div>
+                                    <div class="view">
+                                      <button
+                                        class="btn btn-sm btn-danger"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#deleteModal"
+                                      >
+                                        Reject
+                                      </button>
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="searchfield1">Arif Bipu</td>
+                                <td class="searchfield2">Sick Levae</td>
+                                <td class="searchfield4">
+                                  01/01/2023 - 03-01-2023
+                                </td>
+                                <td class="searchfield3">2 Days</td>
+                                <td class="searchfield4">01/01/2023</td>
+                                <td class="searchfield5">
+                                  <span
+                                    class="badge badge-soft-success text-uppercase"
+                                    >Approved</span
+                                  >
+                                </td>
+                                <td>
+                                  <div class="d-flex gap-2 float-end">
+                                    <div class="edit">
+                                      <button
+                                        class="btn btn-sm btn-success edit-item-btn"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#approveModal"
+                                      >
+                                        Approve
+                                      </button>
+                                    </div>
+                                    <div class="view">
+                                      <button
+                                        class="btn btn-sm btn-danger"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#deleteModal"
+                                      >
+                                        Reject
+                                      </button>
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="searchfield1">Arif Bipu</td>
+                                <td class="searchfield2">Sick Levae</td>
+                                <td class="searchfield4">
+                                  01/01/2023 - 03-01-2023
+                                </td>
+                                <td class="searchfield3">2 Days</td>
+                                <td class="searchfield4">01/01/2023</td>
+                                <td class="searchfield5">
+                                  <span
+                                    class="badge badge-soft-success text-uppercase"
+                                    >Approved</span
+                                  >
+                                </td>
+                                <td>
+                                  <div class="d-flex gap-2 float-end">
+                                    <div class="edit">
+                                      <button
+                                        class="btn btn-sm btn-success edit-item-btn"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#approveModal"
+                                      >
+                                        Approve
+                                      </button>
+                                    </div>
+                                    <div class="view">
+                                      <button
+                                        class="btn btn-sm btn-danger"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#deleteModal"
+                                      >
+                                        Reject
+                                      </button>
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <div class="noresult" style="display: none">
+                            <div class="text-center">
+                              <lord-icon
+                                src="https://cdn.lordicon.com/msoeawqm.json"
+                                trigger="loop"
+                                colors="primary:#121331,secondary:#08a88a"
+                                style="width: 75px; height: 75px"
+                              >
+                              </lord-icon>
+                              <h5 class="mt-2">Sorry! No Result Found</h5>
+                              <p class="text-muted mb-0">
+                                We've searched more than 150+ Orders We did not
+                                find any orders for you search.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                          <div class="pagination-wrap hstack gap-2">
+                            <a
+                              class="page-item pagination-prev disabled"
+                              href="#"
+                            >
+                              Previous
+                            </a>
+                            <ul class="pagination listjs-pagination mb-0"></ul>
+                            <a class="page-item pagination-next" href="#">
+                              Next
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- container-fluid -->
+        </div>
+        <!-- End Page-content -->
+
+        <footer class="footer">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-6">
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                © Velzon.
+              </div>
+              <div class="col-sm-6">
+                <div class="text-sm-end d-none d-sm-block">
+                  Design & Develop by Themesbrand
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <!-- end main content-->
+    </div>
+    <!-- END layout-wrapper -->
+
+    <!--start back-to-top-->
+    <button
+      onclick="topFunction()"
+      class="btn btn-danger btn-icon"
+      id="back-to-top"
+    >
+      <i class="ri-arrow-up-line"></i>
+    </button>
+    <!--end back-to-top-->
+
+    <!-- JAVASCRIPT -->
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/node-waves/waves.min.js"></script>
+    <script src="assets/libs/feather-icons/feather.min.js"></script>
+    <script src="assets/js/pages/plugins/lord-icon-2.1.0.js"></script>
+    <script src="assets/js/plugins.js"></script>
+
+    <!-- apexcharts -->
+    <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+
+    <!-- Dashboard init -->
+    <script src="assets/js/pages/dashboard-crm.init.js"></script>
+
+    <!-- App js -->
+    <script src="assets/js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script>
+      const calendar = new Vue({
+        el: "#app",
+        data() {
+          return {
+            date: moment(),
+            days: [],
+            monthName: "",
+          };
+        },
+        methods: {
+          column(index) {
+            if (index == 0) {
+              return this.days[0].day() + 0;
+            }
+          },
+          isToday(day) {
+            //
+            return moment().isSame(day, "day"); //
+          },
+          updateMonth() {
+            let _self = this;
+            this.monthName = this.date.format("MMMM YYYY");
+            let monthDate = this.date.startOf("month");
+
+            this.days = [...Array(monthDate.daysInMonth())].map((_, i) =>
+              monthDate.clone().add(i, "day")
+            );
+          },
+          nextMonth() {
+            this.date.add(1, "month");
+            this.updateMonth();
+          },
+          previousMonth() {
+            this.date.subtract(1, "month");
+            this.updateMonth();
+          },
+        },
+        mounted() {
+          this.updateMonth();
+        },
+      });
+    </script>
+  </body>
+</html>
