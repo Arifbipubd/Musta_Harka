@@ -235,553 +235,423 @@
       <div class="main-content">
         <div class="page-content">
           <div class="container-fluid">
-            <div class="row mb-5">
-              <div class="col-lg-12 col-xl-6 mb-3">
-                <div
-                  class="card h-100 w-100 px-5 py-4 dashboardProfile d-flex justify-content-center"
-                >
-                  <div class="d-flex gap-5 align-items-center w-100">
-                    <div class="dashboardProfileImg">
-                      <img
-                        src="https://imgv3.fotor.com/images/homepage-feature-card/make-blurry-girl-image-clear-with-Fotor-ai-image-enhancer.png"
-                        alt=""
-                      />
-                    </div>
-                    <div class="dashboardProfileContent w-50">
-                      <div class="mb-4">
-                        <h4 class="fw-semibold">Arif Bipu</h4>
-                      </div>
-                      <div class="d-flex justify-content-between">
-                        <div class="">
-                          <p class="fs-15">
-                            <span class="text-gray me-3">Role :</span>
-                            <span class="text-black fw-medium">User</span>
-                          </p>
-                        </div>
-                        <div class="">
-                          <p class="fs-15">
-                            <span class="text-gray me-3">Position :</span>
-                            <span class="text-black fw-medium"> Team Lead</span>
-                          </p>
-                        </div>
-                      </div>
-                      <div class="">
-                        <p class="fs-15">
-                          <span class="text-gray me-3">Email :</span>
-                          <span class="text-black fw-medium">
-                            arifbipu@gmail.com</span
-                          >
-                        </p>
-                      </div>
-                      <div class="">
-                        <p class="fs-15">
-                          <span class="text-gray me-3">Phone :</span>
-                          <span class="text-black fw-medium"
-                            >+8801887980841
-                          </span>
-                        </p>
-                      </div>
-                      <div class="mb-4">
-                        <p class="fs-15">
-                          <span class="text-gray me-3">Company :</span>
-                          <span class="text-black fw-medium">Evocation It</span>
-                        </p>
-                      </div>
-                      <div class="d-flex gap-3">
-                        <div class="dashboardProfileIcon1">
-                          <i class="lab la-facebook-square cursor fs-36"></i>
-                        </div>
-                        <div class="dashboardProfileIcon2">
-                          <i class="lab la-linkedin cursor fs-36"></i>
-                        </div>
-                        <div class="dashboardProfileIcon3">
-                          <i class="lab la-twitter-square cursor fs-36"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-12 col-xl-3 mb-3">
-                <div class="card h-100 dashboardCalender p-3">
-                  <div
-                    id="app"
-                    class="CalenderPage-content d-flex align-items-center justify-content-center"
-                  >
-                    <div class="calendar-wrap">
-                      <section class="calendar-header mb-3">
-                        <a
-                          @click="previousMonth()"
-                          class="link icon-only calendar-prev-month-button"
-                          ><i class="las la-angle-left cursor"></i
-                        ></a>
-                        <a class="current-month-value link px-3"
-                          >{{ monthName }}</a
-                        >
-                        <a
-                          @click="nextMonth()"
-                          class="link icon-only calendar-next-month-button"
-                          ><i class="las la-angle-right cursor"></i
-                        ></a>
-                      </section>
-
-                      <section
-                        id="calendar-wrapper"
-                        class="calendar-wrapper skeletons"
-                      >
-                        <main id="calendar">
-                          <div class="weekday">S</div>
-                          <div class="weekday">M</div>
-                          <div class="weekday">T</div>
-                          <div class="weekday">W</div>
-                          <div class="weekday">T</div>
-                          <div class="weekday">F</div>
-                          <div class="weekday">S</div>
-
-                          <div
-                            v-for="(day, index) in days"
-                            :data-date="day.format('DD.MM.YYYY')"
-                            :style="{ gridColumn: column(index) }"
-                            :class="{ day, today: isToday(day) }"
-                          >
-                            <span>{{ day.format('D') }}</span>
-                          </div>
-                        </main>
-                      </section>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-12 col-xl-3 mb-3">
-                <div
-                  class="card h-100 dashboardAccordion d-flex justify-content-center align-items-center p-3"
-                >
-                  <!-- Accordions with Icons -->
-                  <div
-                    class="accordion custom-accordionwithicon"
-                    id="accordionWithicon"
-                  >
-                    <div class="accordion-item">
-                      <h2
-                        class="accordion-header"
-                        id="accordionwithiconExample1"
-                      >
-                        <button
-                          class="accordion-button"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#accor_iconExamplecollapse1"
-                          aria-expanded="true"
-                          aria-controls="accor_iconExamplecollapse1"
-                        >
-                          <i
-                            class="las la-window-close text-danger fs-24 me-2"
-                          ></i>
-                          Add Profile Picture
-                        </button>
-                      </h2>
-                      <div
-                        id="accor_iconExamplecollapse1"
-                        class="accordion-collapse collapse show"
-                        aria-labelledby="accordionwithiconExample1"
-                        data-bs-parent="#accordionWithicon"
-                      >
-                        <div class="accordion-body">
-                          Increase or decrease the letter spacing depending on
-                          the situation and try, try again until it looks right,
-                          and each assumenda labore aes Homo nostrud organic,
-                          assumenda labore aesthetic magna elements, buttons,
-                          everything.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2
-                        class="accordion-header"
-                        id="accordionwithiconExample2"
-                      >
-                        <button
-                          class="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#accor_iconExamplecollapse2"
-                          aria-expanded="false"
-                          aria-controls="accor_iconExamplecollapse2"
-                        >
-                          <i class="las la-check fs-20 text-success me-2"></i>
-                          Add Profile Picture
-                        </button>
-                      </h2>
-                      <div
-                        id="accor_iconExamplecollapse2"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="accordionwithiconExample2"
-                        data-bs-parent="#accordionWithicon"
-                      >
-                        <div class="accordion-body">
-                          Nullam quis ante. Etiam sit amet orci eget eros
-                          faucibus tincidunt. Duis leo. Sed fringilla mauris sit
-                          amet nibh. Donec sodales sagittis magna. Sed
-                          consequat, leo eget bibendum sodales, augue velit
-                          cursus nunc, quis gravida magna mi a libero. Fusce
-                          vulputate eleifend sapien.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
             <div class="row">
-              <div class="col-lg-6">
-                <div class="accordion" id="default-accordion-example1">
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                      <button
-                        class="accordion-button"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseOne"
-                        aria-expanded="true"
-                        aria-controls="collapseOne"
-                      >
-                        Notification
-                      </button>
-                    </h2>
+              <div class="col-xl-3 col-md-6">
+                <!-- card -->
+                <div class="card card-animate">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center">
+                      <div class="flex-grow-1 overflow-hidden">
+                        <p
+                          class="text-uppercase fw-medium text-muted text-truncate mb-0"
+                        >
+                          Total Users
+                        </p>
+                      </div>
+                    </div>
                     <div
-                      id="collapseOne"
-                      class="accordion-collapse collapse show"
-                      aria-labelledby="headingOne"
-                      data-bs-parent="#default-accordion-example"
+                      class="d-flex align-items-end justify-content-between mt-4"
                     >
-                      <div class="card mb-0">
-                        <div class="card-body">
-                          <div class="d-flex align-middle">
-                            <div class="flex-shrink-0">
-                              <img
-                                src="assets/images/small/img-1.jpg"
-                                class="rounded img-fluid"
-                                style="height: 60px"
-                                alt=""
-                              />
-                            </div>
-                            <div class="flex-grow-1 ms-3">
-                              <h6 class="mb-1 lh-base">
-                                <a href="#" class="text-reset"
-                                  >One stop shop destination on all the latest
-                                  news in crypto currencies</a
-                                >
-                              </h6>
-                              <p class="text-muted fs-12 mb-0">
-                                Dec 12, 2021
-                                <i
-                                  class="mdi mdi-circle-medium align-middle mx-1"
-                                ></i
-                                >09:22 AM
-                              </p>
-                            </div>
-                          </div>
-                          <!-- end -->
-                          <div class="d-flex mt-4">
-                            <div class="flex-shrink-0">
-                              <img
-                                src="assets/images/small/img-2.jpg"
-                                class="rounded img-fluid"
-                                style="height: 60px"
-                                alt=""
-                              />
-                            </div>
-                            <div class="flex-grow-1 ms-3">
-                              <h6 class="mb-1 lh-base">
-                                <a href="#" class="text-reset"
-                                  >Coin Journal is dedicated to delivering
-                                  stories on the latest crypto</a
-                                >
-                              </h6>
-                              <p class="text-muted fs-12 mb-0">
-                                Dec 03, 2021
-                                <i
-                                  class="mdi mdi-circle-medium align-middle mx-1"
-                                ></i
-                                >12:09 PM
-                              </p>
-                            </div>
-                          </div>
-                          <!-- end -->
-                          <div class="d-flex mt-4">
-                            <div class="flex-shrink-0">
-                              <img
-                                src="assets/images/small/img-3.jpg"
-                                class="rounded img-fluid"
-                                style="height: 60px"
-                                alt=""
-                              />
-                            </div>
-                            <div class="flex-grow-1 ms-3">
-                              <h6 class="mb-1 lh-base">
-                                <a href="#" class="text-reset"
-                                  >The bitcoin-holding U.S. senator is trying to
-                                  “fully integrate” crypto
-                                </a>
-                              </h6>
-                              <p class="text-muted fs-12 mb-0">
-                                Nov 22, 2021
-                                <i
-                                  class="mdi mdi-circle-medium align-middle mx-1"
-                                ></i
-                                >11:47 AM
-                              </p>
-                            </div>
-                          </div>
-                          <!-- end -->
-                          <div class="d-flex mt-4">
-                            <div class="flex-shrink-0">
-                              <img
-                                src="assets/images/small/img-6.jpg"
-                                class="rounded img-fluid"
-                                style="height: 60px"
-                                alt=""
-                              />
-                            </div>
-                            <div class="flex-grow-1 ms-3">
-                              <h6 class="mb-1 lh-base">
-                                <a href="#" class="text-reset"
-                                  >Cryptocurrency price like Bitcoin, Dash,
-                                  Dogecoin, Ripple and Litecoin</a
-                                >
-                              </h6>
-                              <p class="text-muted fs-12 mb-0">
-                                Nov 18, 2021
-                                <i
-                                  class="mdi mdi-circle-medium align-middle mx-1"
-                                ></i
-                                >06:13 PM
-                              </p>
-                            </div>
-                          </div>
-                          <!-- end -->
-                        </div>
-                        <!-- end card body -->
+                      <div>
+                        <h4 class="fs-36 fw-semibold ff-secondary mb-4">10</h4>
+                        <a href="#" class="text-decoration-underline"
+                          >View All User</a
+                        >
+                      </div>
+                      <div class="avatar-sm flex-shrink-0">
+                        <span
+                          class="avatar-title bg-success-subtle rounded fs-3"
+                        >
+                          <i class="bx bx-user text-success"></i>
+                        </span>
                       </div>
                     </div>
                   </div>
+                  <!-- end card body -->
                 </div>
+                <!-- end card -->
               </div>
-              <div class="col-lg-6">
-                <div class="accordion" id="default-accordion-example2">
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                      <button
-                        class="accordion-button"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseTwo"
-                        aria-expanded="true"
-                        aria-controls="collapseTwo"
-                      >
-                        Leave Request
-                      </button>
-                    </h2>
+              <!-- end col -->
+
+              <div class="col-xl-3 col-md-6">
+                <!-- card -->
+                <div class="card card-animate">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center">
+                      <div class="flex-grow-1 overflow-hidden">
+                        <p
+                          class="text-uppercase fw-medium text-muted text-truncate mb-0"
+                        >
+                          Total Customers
+                        </p>
+                      </div>
+                    </div>
                     <div
-                      id="collapseTwo"
-                      class="accordion-collapse collapse show"
-                      aria-labelledby="headingOne"
-                      data-bs-parent="#default-accordion-example"
+                      class="d-flex align-items-end justify-content-between mt-4"
                     >
-                      <div class="card mb-0 p-3">
-                        <div class="col-sm-auto">
-                          <div class="row">
-                            <div class="col-lg-3">
-                              <div class="search-box ms-2">
-                                <input
-                                  type="text"
-                                  class="form-control search"
-                                  placeholder="Search..."
-                                />
-                                <i class="ri-search-line search-icon"></i>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="table-responsive table-card mt-3 mb-1 px-3">
-                          <table
-                            class="table align-middle table-nowrap"
-                            id="customerTable"
-                          >
-                            <thead class="table-light">
-                              <tr>
-                                <th class="sort" data-sort="Employee">
-                                  Employee
-                                </th>
-                                <th class="sort" data-sort="leave">
-                                  Leave type
-                                </th>
-                                <th class="sort" data-sort="Duration">
-                                  Duration
-                                </th>
-                                <th class="sort" data-sort="Days">Days</th>
-                                <th class="sort" data-sort="Applied on">
-                                  Applied on
-                                </th>
-                                <th class="sort" data-sort="Status">Status</th>
-
-                                <th class="sort float-end" data-sort="action">
-                                  Action
-                                </th>
-                              </tr>
-                            </thead>
-                            <tbody class="list form-check-all">
-                              <tr>
-                                <td class="searchfield1">Arif Bipu</td>
-                                <td class="searchfield2">Sick Levae</td>
-                                <td class="searchfield4">
-                                  01/01/2023 - 03-01-2023
-                                </td>
-                                <td class="searchfield3">2 Days</td>
-                                <td class="searchfield4">01/01/2023</td>
-                                <td class="searchfield5">
-                                  <span
-                                    class="badge badge-soft-danger text-uppercase"
-                                    >Reject</span
-                                  >
-                                </td>
-                                <td>
-                                  <div class="d-flex gap-2 float-end">
-                                    <div class="edit">
-                                      <button
-                                        class="btn btn-sm btn-success edit-item-btn"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#approveModal"
-                                      >
-                                        Approve
-                                      </button>
-                                    </div>
-                                    <div class="view">
-                                      <button
-                                        class="btn btn-sm btn-danger"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#deleteModal"
-                                      >
-                                        Reject
-                                      </button>
-                                    </div>
-                                  </div>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td class="searchfield1">Arif Bipu</td>
-                                <td class="searchfield2">Sick Levae</td>
-                                <td class="searchfield4">
-                                  01/01/2023 - 03-01-2023
-                                </td>
-                                <td class="searchfield3">2 Days</td>
-                                <td class="searchfield4">01/01/2023</td>
-                                <td class="searchfield5">
-                                  <span
-                                    class="badge badge-soft-success text-uppercase"
-                                    >Approved</span
-                                  >
-                                </td>
-                                <td>
-                                  <div class="d-flex gap-2 float-end">
-                                    <div class="edit">
-                                      <button
-                                        class="btn btn-sm btn-success edit-item-btn"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#approveModal"
-                                      >
-                                        Approve
-                                      </button>
-                                    </div>
-                                    <div class="view">
-                                      <button
-                                        class="btn btn-sm btn-danger"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#deleteModal"
-                                      >
-                                        Reject
-                                      </button>
-                                    </div>
-                                  </div>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td class="searchfield1">Arif Bipu</td>
-                                <td class="searchfield2">Sick Levae</td>
-                                <td class="searchfield4">
-                                  01/01/2023 - 03-01-2023
-                                </td>
-                                <td class="searchfield3">2 Days</td>
-                                <td class="searchfield4">01/01/2023</td>
-                                <td class="searchfield5">
-                                  <span
-                                    class="badge badge-soft-success text-uppercase"
-                                    >Approved</span
-                                  >
-                                </td>
-                                <td>
-                                  <div class="d-flex gap-2 float-end">
-                                    <div class="edit">
-                                      <button
-                                        class="btn btn-sm btn-success edit-item-btn"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#approveModal"
-                                      >
-                                        Approve
-                                      </button>
-                                    </div>
-                                    <div class="view">
-                                      <button
-                                        class="btn btn-sm btn-danger"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#deleteModal"
-                                      >
-                                        Reject
-                                      </button>
-                                    </div>
-                                  </div>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                          <div class="noresult" style="display: none">
-                            <div class="text-center">
-                              <lord-icon
-                                src="https://cdn.lordicon.com/msoeawqm.json"
-                                trigger="loop"
-                                colors="primary:#121331,secondary:#08a88a"
-                                style="width: 75px; height: 75px"
-                              >
-                              </lord-icon>
-                              <h5 class="mt-2">Sorry! No Result Found</h5>
-                              <p class="text-muted mb-0">
-                                We've searched more than 150+ Orders We did not
-                                find any orders for you search.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="d-flex justify-content-end">
-                          <div class="pagination-wrap hstack gap-2">
-                            <a
-                              class="page-item pagination-prev disabled"
-                              href="#"
-                            >
-                              Previous
-                            </a>
-                            <ul class="pagination listjs-pagination mb-0"></ul>
-                            <a class="page-item pagination-next" href="#">
-                              Next
-                            </a>
-                          </div>
-                        </div>
+                      <div>
+                        <h4 class="fs-36 fw-semibold ff-secondary mb-4">200</h4>
+                        <a href="#" class="text-decoration-underline"
+                          >View all customer</a
+                        >
+                      </div>
+                      <div class="avatar-sm flex-shrink-0">
+                        <span class="avatar-title bg-info-subtle rounded fs-3">
+                          <i class="bx bxs-user-pin text-info"></i>
+                        </span>
                       </div>
                     </div>
                   </div>
+                  <!-- end card body -->
                 </div>
+                <!-- end card -->
               </div>
+              <!-- end col -->
+
+              <div class="col-xl-3 col-md-6">
+                <!-- card -->
+                <div class="card card-animate">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center">
+                      <div class="flex-grow-1 overflow-hidden">
+                        <p
+                          class="text-uppercase fw-medium text-muted text-truncate mb-0"
+                        >
+                          Total Purchases
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex align-items-end justify-content-between mt-4"
+                    >
+                      <div>
+                        <h4 class="fs-36 fw-semibold ff-secondary mb-4">0</h4>
+                        <a href="#" class="text-decoration-underline"
+                          >View total purchases</a
+                        >
+                      </div>
+                      <div class="avatar-sm flex-shrink-0">
+                        <span
+                          class="avatar-title bg-warning-subtle rounded fs-3"
+                        >
+                          <i class="bx bx-clipboard text-warning"></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end card body -->
+                </div>
+                <!-- end card -->
+              </div>
+              <!-- end col -->
+
+              <div class="col-xl-3 col-md-6">
+                <!-- card -->
+                <div class="card card-animate">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center">
+                      <div class="flex-grow-1 overflow-hidden">
+                        <p
+                          class="text-uppercase fw-medium text-muted text-truncate mb-0"
+                        >
+                          Total Song Requests
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex align-items-end justify-content-between mt-4"
+                    >
+                      <div>
+                        <h4 class="fs-36 fw-semibold ff-secondary mb-4">0</h4>
+                        <a href="#" class="text-decoration-underline"
+                          >View All Song Request</a
+                        >
+                      </div>
+                      <div class="avatar-sm flex-shrink-0">
+                        <span
+                          class="avatar-title bg-primary-subtle rounded fs-3"
+                        >
+                          <i class="bx bx-headphone text-primary"></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end card body -->
+                </div>
+                <!-- end card -->
+              </div>
+              <!-- end col -->
             </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="card">
+                <div class="card-header">
+                  <h4 class="card-title mb-0">Tickets Purchases</h4>
+                </div>
+                <!-- end card header -->
+
+                <div class="card-body">
+                  <div id="customerList">
+                    <div class="row g-4 mb-3">
+                      <div class="col-sm-auto">
+                        <div class="">
+                          <div class="search-box ms-2">
+                            <input
+                              type="text"
+                              class="form-control search"
+                              placeholder="Search..."
+                            />
+                            <i class="ri-search-line search-icon"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="table-responsive table-card mt-3 mb-1">
+                      <table
+                        class="table align-middle table-nowrap"
+                        id="customerTable"
+                      >
+                        <thead class="table-light">
+                          <tr>
+                            <th class="sort">#</th>
+                            <th class="sort">Name</th>
+                            <th class="sort">Institution</th>
+                            <th class="sort">Ticket Type</th>
+                            <th class="sort">Price</th>
+                            <th class="sort">Capacity</th>
+                            <th class="sort">Status</th>
+                            <th
+                              class="sort"
+                              data-sort="action"
+                              style="float: inline-end"
+                            >
+                              Action
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody class="list form-check-all">
+                          <tr>
+                            <td>1</td>
+                            <td class="searchfield1">Arif Bipu</td>
+                            <td class="searchfield2">Evocation</td>
+                            <td class="searchfield3">VIP</td>
+                            <td class="searchfield4">2000</td>
+                            <td class="searchfield5">15</td>
+                            <td>
+                              <span
+                                class="badge badge-soft-success text-uppercase"
+                                >Active</span
+                              >
+                            </td>
+                            <td>
+                              <div class="d-flex justify-content-end">
+                                <div class="edit">
+                                  <button
+                                    class="btn btn-sm btn-success edit-item-btn d-flex align-items-center gap-1"
+                                    data-bs-toggle="modal"
+                                  >
+                                    <i class="las la-pencil-alt"></i
+                                    ><span>Edit</span>
+                                  </button>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td class="searchfield1">Arif Bipu</td>
+                            <td class="searchfield2">Evocation</td>
+                            <td class="searchfield3">VIP</td>
+                            <td class="searchfield4">2000</td>
+                            <td class="searchfield5">15</td>
+                            <td>
+                              <span
+                                class="badge badge-soft-danger text-uppercase"
+                                >Disabled</span
+                              >
+                            </td>
+                            <td>
+                              <div class="d-flex justify-content-end">
+                                <div class="edit">
+                                  <button
+                                    class="btn btn-sm btn-success edit-item-btn d-flex align-items-center gap-1"
+                                    data-bs-toggle="modal"
+                                  >
+                                    <i class="las la-pencil-alt"></i
+                                    ><span>Edit</span>
+                                  </button>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="noresult" style="display: none">
+                        <div class="text-center">
+                          <lord-icon
+                            src="https://cdn.lordicon.com/msoeawqm.json"
+                            trigger="loop"
+                            colors="primary:#121331,secondary:#08a88a"
+                            style="width: 75px; height: 75px"
+                          >
+                          </lord-icon>
+                          <h5 class="mt-2">Sorry! No Result Found</h5>
+                          <p class="text-muted mb-0">
+                            We've searched more than 150+ Orders We did not find
+                            any orders for you search.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="d-flex justify-content-end">
+                      <div class="pagination-wrap hstack gap-2">
+                        <a class="page-item pagination-prev disabled" href="#">
+                          Previous
+                        </a>
+                        <ul class="pagination listjs-pagination mb-0"></ul>
+                        <a class="page-item pagination-next" href="#"> Next </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end card -->
+              </div>
+              <!-- end col -->
+            </div>
+            <div class="col-lg-6">
+              <div class="card">
+                <div class="card-header">
+                  <h4 class="card-title mb-0">Song Request</h4>
+                </div>
+                <!-- end card header -->
+
+                <div class="card-body">
+                  <div id="customerList">
+                    <div class="row g-4 mb-3">
+                      <div class="col-sm-auto">
+                        <div class="">
+                          <div class="search-box ms-2">
+                            <input
+                              type="text"
+                              class="form-control search"
+                              placeholder="Search..."
+                            />
+                            <i class="ri-search-line search-icon"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="table-responsive table-card mt-3 mb-1">
+                      <table
+                        class="table align-middle table-nowrap"
+                        id="customerTable"
+                      >
+                        <thead class="table-light">
+                          <tr>
+                            <th class="sort">#</th>
+                            <th class="sort">Title</th>
+                            <th class="sort">Singer</th>
+                            <th class="sort">Requested By</th>
+                            <th class="sort">Request Date</th>
+                            <th class="sort">Status</th>
+                            <th class="sort" style="float: inline-end">
+                              Action
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody class="list form-check-all">
+                          <tr>
+                            <td>1</td>
+                            <td class="searchfield1">Debi</td>
+                            <td class="searchfield2">Bipu</td>
+                            <td class="searchfield3">Arif</td>
+                            <td class="searchfield4">01-02-2024</td>
+                            <td class="searchfield5">
+                              <span
+                                class="badge badge-soft-success text-uppercase"
+                                >Active</span
+                              >
+                            </td>
+                            <td>
+                              <div class="d-flex justify-content-end">
+                                <div class="edit">
+                                  <button
+                                    class="btn btn-sm btn-success edit-item-btn d-flex align-items-center gap-1"
+                                    data-bs-toggle="modal"
+                                  >
+                                    <i class="las la-pencil-alt"></i
+                                    ><span>Edit</span>
+                                  </button>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td class="searchfield1">Debi</td>
+                            <td class="searchfield2">Bipu</td>
+                            <td class="searchfield3">Arif</td>
+                            <td class="searchfield4">01-02-2024</td>
+                            <td class="searchfield5">
+                              <span
+                                class="badge badge-soft-danger text-uppercase"
+                                >Disabled</span
+                              >
+                            </td>
+                            <td>
+                              <div class="d-flex justify-content-end">
+                                <div class="edit">
+                                  <button
+                                    class="btn btn-sm btn-success edit-item-btn d-flex align-items-center gap-1"
+                                    data-bs-toggle="modal"
+                                  >
+                                    <i class="las la-pencil-alt"></i
+                                    ><span>Edit</span>
+                                  </button>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="noresult" style="display: none">
+                        <div class="text-center">
+                          <lord-icon
+                            src="https://cdn.lordicon.com/msoeawqm.json"
+                            trigger="loop"
+                            colors="primary:#121331,secondary:#08a88a"
+                            style="width: 75px; height: 75px"
+                          >
+                          </lord-icon>
+                          <h5 class="mt-2">Sorry! No Result Found</h5>
+                          <p class="text-muted mb-0">
+                            We've searched more than 150+ Orders We did not find
+                            any orders for you search.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="d-flex justify-content-end">
+                      <div class="pagination-wrap hstack gap-2">
+                        <a class="page-item pagination-prev disabled" href="#">
+                          Previous
+                        </a>
+                        <ul class="pagination listjs-pagination mb-0"></ul>
+                        <a class="page-item pagination-next" href="#"> Next </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end card -->
+              </div>
+              <!-- end col -->
+            </div>
+            <!-- end col -->
           </div>
           <!-- container-fluid -->
         </div>
@@ -794,11 +664,14 @@
                 <script>
                   document.write(new Date().getFullYear());
                 </script>
-                © Velzon.
+                © Musta Harka.
               </div>
               <div class="col-sm-6">
                 <div class="text-sm-end d-none d-sm-block">
-                  Design & Develop by Themesbrand
+                  Design & Develop by
+                  <a href="https://evocationit.com/" target="_blank"
+                    >Evocation It</a
+                  >
                 </div>
               </div>
             </div>
@@ -826,59 +699,14 @@
     <script src="assets/libs/feather-icons/feather.min.js"></script>
     <script src="assets/js/pages/plugins/lord-icon-2.1.0.js"></script>
     <script src="assets/js/plugins.js"></script>
-
-    <!-- apexcharts -->
-    <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
-
-    <!-- Dashboard init -->
-    <script src="assets/js/pages/dashboard-crm.init.js"></script>
+    <!-- prismjs plugin -->
+    <script src="assets/libs/prismjs/prism.js"></script>
+    <script src="assets/libs/list.js/list.min.js"></script>
+    <script src="assets/libs/list.pagination.js/list.pagination.min.js"></script>
+    <!-- listjs init -->
+    <script src="assets/js/pages/listjs.init.js"></script>
 
     <!-- App js -->
     <script src="assets/js/app.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
-    <script>
-      const calendar = new Vue({
-        el: "#app",
-        data() {
-          return {
-            date: moment(),
-            days: [],
-            monthName: "",
-          };
-        },
-        methods: {
-          column(index) {
-            if (index == 0) {
-              return this.days[0].day() + 0;
-            }
-          },
-          isToday(day) {
-            //
-            return moment().isSame(day, "day"); //
-          },
-          updateMonth() {
-            let _self = this;
-            this.monthName = this.date.format("MMMM YYYY");
-            let monthDate = this.date.startOf("month");
-
-            this.days = [...Array(monthDate.daysInMonth())].map((_, i) =>
-              monthDate.clone().add(i, "day")
-            );
-          },
-          nextMonth() {
-            this.date.add(1, "month");
-            this.updateMonth();
-          },
-          previousMonth() {
-            this.date.subtract(1, "month");
-            this.updateMonth();
-          },
-        },
-        mounted() {
-          this.updateMonth();
-        },
-      });
-    </script>
   </body>
 </html>
