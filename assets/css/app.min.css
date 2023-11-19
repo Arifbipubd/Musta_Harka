@@ -4895,6 +4895,10 @@ strong {
   color: #f06548;
   background-color: rgba(240, 101, 72, 0.1);
 }
+.badge-soft-warning {
+  color: #f7b84b;
+  background-color: rgba(247, 184, 75, 0.1);
+}
 .badge-outline.badge-danger {
   color: #f06548;
   border: 1px solid #f06548;

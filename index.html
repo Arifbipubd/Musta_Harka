@@ -97,6 +97,162 @@
                   <span></span>
                 </span>
               </button>
+              <!-- App Search-->
+              <form class="app-search d-none">
+                <div class="position-relative">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Search..."
+                    autocomplete="off"
+                    id="search-options"
+                    value=""
+                  />
+                  <span class="mdi mdi-magnify search-widget-icon"></span>
+                  <span
+                    class="mdi mdi-close-circle search-widget-icon search-widget-icon-close d-none"
+                    id="search-close-options"
+                  ></span>
+                </div>
+                <div
+                  class="dropdown-menu dropdown-menu-lg"
+                  id="search-dropdown"
+                >
+                  <div data-simplebar style="max-height: 320px">
+                    <!-- item-->
+                    <div class="dropdown-header">
+                      <h6 class="text-overflow text-muted mb-0 text-uppercase">
+                        Recent Searches
+                      </h6>
+                    </div>
+
+                    <div class="dropdown-item bg-transparent text-wrap">
+                      <a
+                        href="index.html"
+                        class="btn btn-soft-secondary btn-sm btn-rounded"
+                        >how to setup <i class="mdi mdi-magnify ms-1"></i
+                      ></a>
+                      <a
+                        href="index.html"
+                        class="btn btn-soft-secondary btn-sm btn-rounded"
+                        >buttons <i class="mdi mdi-magnify ms-1"></i
+                      ></a>
+                    </div>
+                    <!-- item-->
+                    <div class="dropdown-header mt-2">
+                      <h6 class="text-overflow text-muted mb-1 text-uppercase">
+                        Pages
+                      </h6>
+                    </div>
+
+                    <!-- item-->
+                    <a
+                      href="javascript:void(0);"
+                      class="dropdown-item notify-item"
+                    >
+                      <i
+                        class="ri-bubble-chart-line align-middle fs-18 text-muted me-2"
+                      ></i>
+                      <span>Analytics Dashboard</span>
+                    </a>
+
+                    <!-- item-->
+                    <a
+                      href="javascript:void(0);"
+                      class="dropdown-item notify-item"
+                    >
+                      <i
+                        class="ri-lifebuoy-line align-middle fs-18 text-muted me-2"
+                      ></i>
+                      <span>Help Center</span>
+                    </a>
+
+                    <!-- item-->
+                    <a
+                      href="javascript:void(0);"
+                      class="dropdown-item notify-item"
+                    >
+                      <i
+                        class="ri-user-settings-line align-middle fs-18 text-muted me-2"
+                      ></i>
+                      <span>My account settings</span>
+                    </a>
+
+                    <!-- item-->
+                    <div class="dropdown-header mt-2">
+                      <h6 class="text-overflow text-muted mb-2 text-uppercase">
+                        Members
+                      </h6>
+                    </div>
+
+                    <div class="notification-list">
+                      <!-- item -->
+                      <a
+                        href="javascript:void(0);"
+                        class="dropdown-item notify-item py-2"
+                      >
+                        <div class="d-flex">
+                          <img
+                            src="assets/images/users/avatar-2.jpg"
+                            class="me-3 rounded-circle avatar-xs"
+                            alt="user-pic"
+                          />
+                          <div class="flex-1">
+                            <h6 class="m-0">Angela Bernier</h6>
+                            <span class="fs-11 mb-0 text-muted">Manager</span>
+                          </div>
+                        </div>
+                      </a>
+                      <!-- item -->
+                      <a
+                        href="javascript:void(0);"
+                        class="dropdown-item notify-item py-2"
+                      >
+                        <div class="d-flex">
+                          <img
+                            src="assets/images/users/avatar-3.jpg"
+                            class="me-3 rounded-circle avatar-xs"
+                            alt="user-pic"
+                          />
+                          <div class="flex-1">
+                            <h6 class="m-0">David Grasso</h6>
+                            <span class="fs-11 mb-0 text-muted"
+                              >Web Designer</span
+                            >
+                          </div>
+                        </div>
+                      </a>
+                      <!-- item -->
+                      <a
+                        href="javascript:void(0);"
+                        class="dropdown-item notify-item py-2"
+                      >
+                        <div class="d-flex">
+                          <img
+                            src="assets/images/users/avatar-5.jpg"
+                            class="me-3 rounded-circle avatar-xs"
+                            alt="user-pic"
+                          />
+                          <div class="flex-1">
+                            <h6 class="m-0">Mike Bunch</h6>
+                            <span class="fs-11 mb-0 text-muted"
+                              >React Developer</span
+                            >
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="text-center pt-3 pb-1">
+                    <a
+                      href="pages-search-results.html"
+                      class="btn btn-primary btn-sm"
+                      >View All Results <i class="ri-arrow-right-line ms-1"></i
+                    ></a>
+                  </div>
+                </div>
+              </form>
             </div>
 
             <div class="d-flex align-items-center">
@@ -393,22 +549,7 @@
 
                 <div class="card-body">
                   <div id="customerList">
-                    <div class="row g-4 mb-3">
-                      <div class="col-sm-auto">
-                        <div class="">
-                          <div class="search-box ms-2">
-                            <input
-                              type="text"
-                              class="form-control search"
-                              placeholder="Search..."
-                            />
-                            <i class="ri-search-line search-icon"></i>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="table-responsive table-card mt-3 mb-1">
+                    <div class="table-responsive table-card my-1">
                       <table
                         class="table align-middle table-nowrap"
                         id="customerTable"
@@ -422,13 +563,6 @@
                             <th class="sort">Price</th>
                             <th class="sort">Capacity</th>
                             <th class="sort">Status</th>
-                            <th
-                              class="sort"
-                              data-sort="action"
-                              style="float: inline-end"
-                            >
-                              Action
-                            </th>
                           </tr>
                         </thead>
                         <tbody class="list form-check-all">
@@ -445,19 +579,6 @@
                                 >Active</span
                               >
                             </td>
-                            <td>
-                              <div class="d-flex justify-content-end">
-                                <div class="edit">
-                                  <button
-                                    class="btn btn-sm btn-success edit-item-btn d-flex align-items-center gap-1"
-                                    data-bs-toggle="modal"
-                                  >
-                                    <i class="las la-pencil-alt"></i
-                                    ><span>Edit</span>
-                                  </button>
-                                </div>
-                              </div>
-                            </td>
                           </tr>
                           <tr>
                             <td>2</td>
@@ -471,19 +592,6 @@
                                 class="badge badge-soft-danger text-uppercase"
                                 >Disabled</span
                               >
-                            </td>
-                            <td>
-                              <div class="d-flex justify-content-end">
-                                <div class="edit">
-                                  <button
-                                    class="btn btn-sm btn-success edit-item-btn d-flex align-items-center gap-1"
-                                    data-bs-toggle="modal"
-                                  >
-                                    <i class="las la-pencil-alt"></i
-                                    ><span>Edit</span>
-                                  </button>
-                                </div>
-                              </div>
                             </td>
                           </tr>
                         </tbody>
@@ -503,16 +611,6 @@
                             any orders for you search.
                           </p>
                         </div>
-                      </div>
-                    </div>
-
-                    <div class="d-flex justify-content-end">
-                      <div class="pagination-wrap hstack gap-2">
-                        <a class="page-item pagination-prev disabled" href="#">
-                          Previous
-                        </a>
-                        <ul class="pagination listjs-pagination mb-0"></ul>
-                        <a class="page-item pagination-next" href="#"> Next </a>
                       </div>
                     </div>
                   </div>
@@ -530,22 +628,7 @@
 
                 <div class="card-body">
                   <div id="customerList">
-                    <div class="row g-4 mb-3">
-                      <div class="col-sm-auto">
-                        <div class="">
-                          <div class="search-box ms-2">
-                            <input
-                              type="text"
-                              class="form-control search"
-                              placeholder="Search..."
-                            />
-                            <i class="ri-search-line search-icon"></i>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="table-responsive table-card mt-3 mb-1">
+                    <div class="table-responsive table-card my-1">
                       <table
                         class="table align-middle table-nowrap"
                         id="customerTable"
@@ -558,9 +641,6 @@
                             <th class="sort">Requested By</th>
                             <th class="sort">Request Date</th>
                             <th class="sort">Status</th>
-                            <th class="sort" style="float: inline-end">
-                              Action
-                            </th>
                           </tr>
                         </thead>
                         <tbody class="list form-check-all">
@@ -576,19 +656,6 @@
                                 >Active</span
                               >
                             </td>
-                            <td>
-                              <div class="d-flex justify-content-end">
-                                <div class="edit">
-                                  <button
-                                    class="btn btn-sm btn-success edit-item-btn d-flex align-items-center gap-1"
-                                    data-bs-toggle="modal"
-                                  >
-                                    <i class="las la-pencil-alt"></i
-                                    ><span>Edit</span>
-                                  </button>
-                                </div>
-                              </div>
-                            </td>
                           </tr>
                           <tr>
                             <td>2</td>
@@ -602,48 +669,9 @@
                                 >Disabled</span
                               >
                             </td>
-                            <td>
-                              <div class="d-flex justify-content-end">
-                                <div class="edit">
-                                  <button
-                                    class="btn btn-sm btn-success edit-item-btn d-flex align-items-center gap-1"
-                                    data-bs-toggle="modal"
-                                  >
-                                    <i class="las la-pencil-alt"></i
-                                    ><span>Edit</span>
-                                  </button>
-                                </div>
-                              </div>
-                            </td>
                           </tr>
                         </tbody>
                       </table>
-                      <div class="noresult" style="display: none">
-                        <div class="text-center">
-                          <lord-icon
-                            src="https://cdn.lordicon.com/msoeawqm.json"
-                            trigger="loop"
-                            colors="primary:#121331,secondary:#08a88a"
-                            style="width: 75px; height: 75px"
-                          >
-                          </lord-icon>
-                          <h5 class="mt-2">Sorry! No Result Found</h5>
-                          <p class="text-muted mb-0">
-                            We've searched more than 150+ Orders We did not find
-                            any orders for you search.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="d-flex justify-content-end">
-                      <div class="pagination-wrap hstack gap-2">
-                        <a class="page-item pagination-prev disabled" href="#">
-                          Previous
-                        </a>
-                        <ul class="pagination listjs-pagination mb-0"></ul>
-                        <a class="page-item pagination-next" href="#"> Next </a>
-                      </div>
                     </div>
                   </div>
                 </div>
