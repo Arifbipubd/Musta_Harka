@@ -511,6 +511,7 @@
                                   <button
                                     class="btn btn-sm btn-success edit-item-btn d-flex align-items-center gap-1"
                                     data-bs-toggle="modal"
+                                    data-bs-target="#user-edit-Modal"
                                   >
                                     <i class="las la-pencil-alt"></i
                                     ><span>Edit</span>
@@ -536,6 +537,7 @@
                                   <button
                                     class="btn btn-sm btn-success edit-item-btn d-flex align-items-center gap-1"
                                     data-bs-toggle="modal"
+                                    data-bs-target="#user-edit-Modal"
                                   >
                                     <i class="las la-pencil-alt"></i
                                     ><span>Edit</span>
@@ -601,6 +603,117 @@
         </footer>
       </div>
       <!-- end main content-->
+
+      <div
+        class="modal fade"
+        id="user-edit-Modal"
+        tabindex="-1"
+        aria-labelledby="exampleModalgridLabel"
+        aria-modal="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalgridLabel">Edit User</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form action="javascript:void(0);">
+                <div class="row g-3">
+                  <div class="col-xxl-12">
+                    <div>
+                      <label for="name" class="form-label">Name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="name"
+                        placeholder="Enter Name"
+                      />
+                    </div>
+                  </div>
+                  <!--end col-->
+                  <div class="col-xxl-6">
+                    <div>
+                      <label for="email" class="form-label">Email</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        name="email"
+                        placeholder="Enter Email"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-xxl-6">
+                    <div>
+                      <label for="phone" class="form-label">Phone</label>
+                      <input
+                        type="number"
+                        class="form-control"
+                        name="number"
+                        placeholder="Enter Number"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-xxl-6">
+                    <div>
+                      <label for="password" class="form-label">Password</label>
+                      <input
+                        type="password"
+                        class="form-control"
+                        name="password"
+                        placeholder="Enter Password"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-xxl-6">
+                    <div>
+                      <label for="" class="form-label d-flex align-items-center"
+                        >Role
+                        <i
+                          class="las la-question-circle tooltip-icon mx-1"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="top"
+                          title="Role"
+                          rel="tooltip"
+                        ></i
+                      ></label>
+                      <select id="" placeholder="Choose Role">
+                        <option value="">Select a Role...</option>
+                        <option>Admin</option>
+                        <option>Entry</option>
+                        <option>DJ</option>
+                        <option>Customer</option>
+                      </select>
+                    </div>
+                  </div>
+                  <!--end col-->
+                  <div class="col-lg-12">
+                    <div class="hstack gap-2 justify-content-end">
+                      <button
+                        type="button"
+                        class="btn btn-light"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="submit" class="btn btn-primary">
+                        Submit
+                      </button>
+                    </div>
+                  </div>
+                  <!--end col-->
+                </div>
+                <!--end row-->
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- END layout-wrapper -->
 
