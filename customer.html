@@ -419,6 +419,8 @@
                             <button
                               type="button"
                               class="btn btn-success add-btn"
+                              data-bs-toggle="modal"
+                              data-bs-target="#customerAddModal"
                             >
                               <i class="ri-add-line align-bottom me-1"></i> Add
                               Customer
@@ -451,7 +453,15 @@
                               <td class="searchfield1">Arif Bipu</td>
                               <td class="searchfield2">arif@gmail.com</td>
                               <td class="searchfield3">01887980148</td>
-                              <td class="searchfield4">Don't Know</td>
+                              <td class="searchfield4">
+                                <div class="flex-shrink-0">
+                                  <img
+                                    src="assets/images/users/avatar-4.jpg"
+                                    alt=""
+                                    class="avatar-xs rounded-circle"
+                                  />
+                                </div>
+                              </td>
                               <td class="searchfield4">Bipu</td>
                               <td>
                                 <div class="d-flex justify-content-end">
@@ -459,6 +469,7 @@
                                     <button
                                       class="btn btn-sm btn-success edit-item-btn d-flex align-items-center gap-1"
                                       data-bs-toggle="modal"
+                                      data-bs-target="#customerEditModal"
                                     >
                                       <i class="las la-pencil-alt"></i
                                       ><span>Edit</span>
@@ -472,7 +483,15 @@
                               <td class="searchfield1">Arif Bipu</td>
                               <td class="searchfield2">arif@gmail.com</td>
                               <td class="searchfield3">01887980148</td>
-                              <td class="searchfield4">Don't Know</td>
+                              <td class="searchfield4">
+                                <div class="flex-shrink-0">
+                                  <img
+                                    src="assets/images/users/avatar-4.jpg"
+                                    alt=""
+                                    class="avatar-xs rounded-circle"
+                                  />
+                                </div>
+                              </td>
                               <td class="searchfield4">Bipu</td>
                               <td>
                                 <div class="d-flex justify-content-end">
@@ -480,6 +499,7 @@
                                     <button
                                       class="btn btn-sm btn-success edit-item-btn d-flex align-items-center gap-1"
                                       data-bs-toggle="modal"
+                                      data-bs-target="#customerEditModal"
                                     >
                                       <i class="las la-pencil-alt"></i
                                       ><span>Edit</span>
@@ -561,6 +581,110 @@
 
     <div
       class="modal fade"
+      id="customerAddModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalgridLabel"
+      aria-modal="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalgridLabel">Add Customer</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="javascript:void(0);">
+              <div class="row g-3">
+                <div class="col-xxl-6">
+                  <div>
+                    <label for="name" class="form-label">Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="name"
+                      placeholder="Enter Name"
+                    />
+                  </div>
+                </div>
+                <!--end col-->
+                <div class="col-xxl-6">
+                  <div>
+                    <label for="email" class="form-label">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      placeholder="Enter Email"
+                    />
+                  </div>
+                </div>
+                <div class="col-xxl-6">
+                  <div>
+                    <label for="phone" class="form-label">Phone</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      name="phone"
+                      placeholder="Enter your phone"
+                    />
+                  </div>
+                </div>
+                <div class="col-xxl-6">
+                  <div>
+                    <label for="song-req" class="form-label"
+                      >Song request</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="song-req"
+                      placeholder="Enter Your Song request"
+                    />
+                  </div>
+                </div>
+                <div class="col-xxl-12">
+                  <div>
+                    <label for="profileImg" class="form-label"
+                      >Profile Picture</label
+                    >
+                    <input
+                      type="file"
+                      class="form-control"
+                      name="profileImg"
+                      placeholder="Enter your Profile Image"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="hstack gap-2 justify-content-end">
+                    <button
+                      type="button"
+                      class="btn btn-light"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="submit" class="btn btn-primary">
+                      Submit
+                    </button>
+                  </div>
+                </div>
+                <!--end col-->
+              </div>
+              <!--end row-->
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
       id="customerEditModal"
       tabindex="-1"
       aria-labelledby="exampleModalgridLabel"
@@ -570,7 +694,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalgridLabel">
-              Edit Institution
+              Edit Customer
             </h5>
             <button
               type="button"
@@ -618,49 +742,30 @@
                 </div>
                 <div class="col-xxl-6">
                   <div>
-                    <label for="address" class="form-label">Address</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      name="Address"
-                      placeholder="Enter your address"
-                    />
-                  </div>
-                </div>
-                <div class="col-xxl-6">
-                  <div>
-                    <label for="map-location" class="form-label"
-                      >Map Location</label
+                    <label for="song-req" class="form-label"
+                      >Song request</label
                     >
                     <input
                       type="text"
                       class="form-control"
-                      name="map-location"
-                      placeholder="Enter your map location"
+                      name="song-req"
+                      placeholder="Enter Your Song request"
                     />
                   </div>
                 </div>
-                <!--end col-->
-                <div class="col-xxl-6">
+                <div class="col-xxl-12">
                   <div>
-                    <label for="" class="form-label d-flex align-items-center"
-                      >Status
-                      <i
-                        class="las la-question-circle tooltip-icon mx-1"
-                        data-bs-toggle="tooltip"
-                        data-bs-placement="top"
-                        title="Status"
-                        rel="tooltip"
-                      ></i
-                    ></label>
-                    <select id="" placeholder="Choose Status">
-                      <option value="">Select a status...</option>
-                      <option>Active</option>
-                      <option>Disable</option>
-                    </select>
+                    <label for="profileImg" class="form-label"
+                      >Profile Picture</label
+                    >
+                    <input
+                      type="file"
+                      class="form-control"
+                      name="profileImg"
+                      placeholder="Enter your Profile Image"
+                    />
                   </div>
                 </div>
-                <!--end col-->
                 <div class="col-lg-12">
                   <div class="hstack gap-2 justify-content-end">
                     <button
